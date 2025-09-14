@@ -57,6 +57,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        asthra: {
+          green: "hsl(var(--asthra-green))",
+          "green-light": "hsl(var(--asthra-green-light))",
+          "green-dark": "hsl(var(--asthra-green-dark))",
+          blue: "hsl(var(--asthra-blue))",
+          "blue-light": "hsl(var(--asthra-blue-light))",
+          "blue-dark": "hsl(var(--asthra-blue-dark))",
+        },
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-card": "var(--gradient-card)",
+        "gradient-hero": "var(--gradient-hero)",
+      },
+      boxShadow: {
+        "asthra": "var(--shadow-asthra)",
+        "card-asthra": "var(--shadow-card)",
       },
       borderRadius: {
         lg: "var(--radius)",
