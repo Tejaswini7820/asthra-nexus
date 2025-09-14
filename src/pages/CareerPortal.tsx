@@ -50,25 +50,23 @@ export default function CareerPortal() {
       </section>
 
       {/* Navigation Tabs */}
-      <section className="py-8 border-b border-border">
+      <section className="bg-gradient-to-r from-asthra-blue to-asthra-green py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            {careerFeatures.map((feature, index) => (
-              <div key={index} className="bg-card p-6 rounded-lg border border-border hover:shadow-card-asthra transition-all duration-300 cursor-pointer group">
-                <div className="text-center">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center mx-auto mb-4 group-hover:shadow-asthra transition-all duration-300">
-                    {feature.icon}
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300 mb-2">
+          <nav>
+            <ul className="flex justify-center gap-8 md:gap-12">
+              {careerFeatures.map((feature, index) => (
+                <li key={index} className="px-4 py-3">
+                  <a 
+                    href="#" 
+                    className="text-white text-lg font-semibold transition-all duration-300 hover:text-yellow-300 relative group pb-2"
+                  >
                     {feature.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </section>
 
