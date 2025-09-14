@@ -77,16 +77,24 @@ export default function Events() {
 
       {/* Features Section */}
       <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-12 mb-16">
             {eventFeatures.map((feature, index) => (
-              <FeatureCard
-                key={index}
-                title={feature.title}
-                description={feature.description}
-                icon={feature.icon}
-                className="col-span-1"
-              />
+              <div key={index} className="bg-gradient-card border border-border/50 rounded-lg p-8 hover:shadow-card-asthra transition-all duration-300">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
+                    {feature.icon}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-foreground mb-3">
+                      {feature.title}
+                    </h3>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
 
